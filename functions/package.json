@@ -1,0 +1,26 @@
+{
+  "name": "Androidthings",
+  "description": "Fun way to learn more about Technical things!",
+  "version": "1.0",
+  "private": true,
+  "license": "Apache Version 2.0",
+  "author": "Nikit Sharma.",
+  "engines": {
+    "node": "~4.2"
+  },
+  "scripts": {
+    "lint": "semistandard --fix \"**/*.js\"",
+    "start": "firebase serve --only functions",
+    "deploy": "firebase deploy --only functions"
+  },
+  "dependencies": {
+    "@google-cloud/logging": "^1.0.2",
+    "actions-on-google": "^1.1.0",
+    "firebase-admin": "^4.2.1",
+    "firebase-functions": "^0.5.8",
+    "node-wikipedia": "0.0.2"
+  },
+  "devDependencies": {
+    "semistandard": "^9.1.0"
+  }
+}
